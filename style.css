@@ -1,0 +1,11 @@
+#map { 
+    height: 600px; 
+    width: 900px;
+    display:inline-block;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;    
+}
