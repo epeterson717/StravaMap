@@ -1,2 +1,10 @@
 # StravaMap
-Uploads Strava run data to map
+Uploads personal Strava run data to map
+
+
+Code needs to be updated with user tokens from 
+Strava: https://www.strava.com/settings/api
+and Mapbox: https://docs.mapbox.com/help/how-mapbox-works/access-tokens/
+
+![Website Preview](/images/Capture.jpg)
+
