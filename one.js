@@ -1,5 +1,3 @@
-// Baseline Code: https://github.com/fpolignano/Code_From_Tutorials/blob/master/Strava_Api/strava_api.js
-
 const auth_link = "https://www.strava.com/oauth/token"
 
 function getActivites(res){
@@ -15,14 +13,36 @@ function getActivites(res){
                 id: 'mapbox/streets-v11',
                 tileSize: 512,
                 zoomOffset: -1,
-                accessToken: 'ACCESS TOKEN'
+                accessToken: 'sk.eyJ1IjoiZW1pbHlwZXRlcnNvbiIsImEiOiJja2J0eTNyeTkwMWFoMnltbDhzM203ancxIn0.7s7ld4O1YBb_Zh_9KoILuA'
             }).addTo(mymap);
 
             function onMapClick(e) {
                 alert("You clicked the map at " + e.latlng);
             }
             mymap.on('click', onMapClick);
-           
+            /*
+            // Richmond Marathon
+            var marker1 = L.marker([37.5407, -77.4360]).addTo(mymap);
+            marker1.bindPopup("<b>Richmond Marathon</b><br>2015");
+            // Philly Marathon
+            var marker2 = L.marker([39.9526, -75.1652]).addTo(mymap);
+            marker2.bindPopup("<b>Philadelphia Marathon</b><br>2018");
+            // Cleveland Marathon
+            var marker3 = L.marker([41.4993, -81.6944]).addTo(mymap);
+            marker3.bindPopup("<b>Cleveland Marathon</b><br>2019");
+            // Marine Corps Marathon
+            var marker4 = L.marker([38.907192, -77.036873]).addTo(mymap);
+            marker4.bindPopup("<b>Marine Corps Marathon</b><br>2019");
+            // Trail Jam Marathon
+            var marker5 = L.marker([34.2104, -77.8868]).addTo(mymap);
+            marker5.bindPopup("<b>Trail Jam Marathon</b><br>2020");
+            // Seneca Greenway Trail 50K
+            var marker6 = L.marker([39.1440, -77.2016]).addTo(mymap);
+            marker6.bindPopup("<b>Seneca Greenway Trail 50K</b><br>2020");
+            // Lemmings Loop
+            var marker7 = L.marker([33.532047, -81.9986427]).addTo(mymap);
+            marker7.bindPopup("<b>Lemmings Loop</b><br>2020");
+            */
             console.log(data)
            
             for(var x=0; x<data.length; x++){
@@ -60,9 +80,9 @@ function reAuthorize(){
 
         body: JSON.stringify({
 
-            client_id: 'CLIENT ID',
-            client_secret: 'CLIENT SECRET',
-            refresh_token: 'REFRESH TOKEN',
+            client_id: '50189',
+            client_secret: 'fe336071a67f1212a2376122e7e7f78547ad4c27',
+            refresh_token: '9ca3ac6c8f986077edd4c6c17ab48e34503d2161',
             grant_type: 'refresh_token'
         })
     }).then(res => res.json())
