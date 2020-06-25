@@ -6,5 +6,6 @@ Code needs to be updated with user tokens from
 Strava: https://www.strava.com/settings/api
 and Mapbox: https://docs.mapbox.com/help/how-mapbox-works/access-tokens/
 
-(Capture.JPG)
+
+![Web Preview](https://raw.githubusercontent.com/epeterson717/StravaMap/Capture.JPG)
 
